@@ -2,6 +2,7 @@ require 'aws/sqs'
 require 'message'
 
 class MessageSqs
+
   attr_reader :name
   def initialize(name)
     @name = name
@@ -25,4 +26,3 @@ class MessageSqs
 end
 
 Message.queue.adapters[:sqs] = MessageSqs
-Message.queue.adapter = :sqs
