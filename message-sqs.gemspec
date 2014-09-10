@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'message-sqs'
-  s.version = '0.0.1'
+  s.version = '0.0.2'
   s.summary = 'Message SQS queue adapter.'
   s.description = <<-EOF
 Hook up AWS SQS with Message background/asynchronous job processing mechanism.
