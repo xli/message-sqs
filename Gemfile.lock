@@ -1,9 +1,9 @@
 PATH
   remote: .
   specs:
-    message-sqs (0.0.2)
+    message-sqs (1.0.0)
       aws-sdk (~> 2)
-      message (>= 0.0.1)
+      message (>= 0.0.8)
 
 GEM
   remote: https://rubygems.org/
