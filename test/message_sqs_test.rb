@@ -18,9 +18,10 @@ class MessageSqsTest < Test::Unit::TestCase
     q = Message.queue("message-sqs-test-#{Time.now.to_i}")
     q << 'msg'
     assert_equal 1, q.size
-    result = q.deq do |msg|
-      "received #{msg}"
+    result = []
+    q.deq do |msg|
+      result << "received #{msg}"
     end
-    assert_equal 'received msg', result
+    assert_equal ['received msg'], result
   end
 end

@@ -10,7 +10,7 @@ EOF
   s.email = ['swing1979@gmail.com']
   s.homepage = 'https://github.com/xli/message-sqs'
 
-  s.add_runtime_dependency('aws-sdk', '>= 1.43.3')
+  s.add_runtime_dependency('aws-sdk', '~> 2')
   s.add_runtime_dependency('message', '>= 0.0.1')
 
   s.files = ['README.md']
